@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6825290d93.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/slg.jpg" class="slg">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front-End Web Developer</p>
+            <h1> Hi, I'm <span>Steffi Stalin</span></h1>       
+
+         </div>    
+    </div> 
+ </div>  
+
+ <div id="about">
+    <div class="container">
+        <div class="row">
+             <div class="about-col-1">
+                 <img src="images/user.jpg">
+            </div> 
+             <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I am an Electronics and Communication Engineering Graduate with hands-on experience in coding and web development. An enthusiastic learner, through these 4 solid years have learned Python , SQL and C languages on my own interest and gained hands-on experience in coding through online coding websites. Did course in web development as my final year internship and worked in various projects that lifted my understanding in HTML, CSS and JavaScript.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links active-link" onclick="opentab('projects')">Projects</p>
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                </div> 
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python<br>SQL<br>C</span></li>
+                        <li><span>HTML<br>CSS<br>JavaScript</span></li>
+                        <li><span>Front-End Web Development</span> </li>
+                    </ul>
+                </div>
+                 <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>3-way Traffic Light Control System using Arduino</span></li>
+                        <li><span>Cancer Detection using CNN</span></li>
+                        <li><span>Personal Portfolio</span> </li>
+                        <li><span>To Do List Application</span> </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>B.E from St.Joseph's College of Engineering<br>(Affiliated to Anna University)</li>
+                        <li><span>2020-2021</span><br>HSLC from Mar Gregoreous Matriculation Higher Secondary School</li>
+                        <li><span>2018-2019</span><br>SSLC from Mar Gregoreous Matriculation Higher Secondary School</li>
+                    </ul>
+                </div>
+             </div>     
+        </div>  
+    </div>
+</div>
+<!-- ----------services----------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">What I Do</h1>
+        <div class="services-list">
+            <div> 
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Design</h2>
+                <p>I specialize in creating clean, responsive, and user-friendly web interfaces using HTML, CSS and JavaScript. My focus is on crafting visually appealing designs that work seamlessly across devices and browsers.I enjoy turning complex problems into simple, interactive user experiences, and I'm constantly learning to stay up-to-date with modern web standards and best practices.</p>
+                <a href="#">Learn more</a>
+            </div>
+             <div> 
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Front-End Web Development</h2>
+                <p>I build the visual and interactive parts of websites using HTML, CSS, and JavaScript. My goal is to create smooth, responsive user experiences that work across all devices. I focus on writing clean, efficient code and bringing designs to life through functional and accessible interfaces</p>
+                <a href="#">Learn more</a>
+            </div>
+             <div>
+                <i class="fa-solid fa-mobile-screen-button"></i> 
+                <h2>Building clean, mobile-friendly websibes</h2>
+                <p>I focus on building websites that are visually clean, easy to navigate, and fully responsive on all devices.Using modern web technologies and a mobile-first approach, I ensure that websites look great and function smoothly on smartphones, tables, and desktops alike.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- ----------Portfolio----------- -->
+<div id="portfolio">
+     <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/portfoliofinal.jpg">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p>A personal portfolio is a curated collection of your work, skills, and achievements presented in a structured and visually appealing format typically as a website. It serves as your digital identity.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+             </div>
+             <div class="work">
+                <img src="images/todolisttt.jpeg">
+                <div class="layer">
+                    <h3>To Do List App</h3>
+                    <p>The To-Do List application is a simple yet powerful productivity tool designed to help users manage their daily tasks efficiently. It allows users to create, update, and delete tasks, keeping track of what needs to be done.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+             </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+     </div> 
+</div>
+<!-- -----------contact------------- -->
+ <div id="contact">
+    <div class="container">
+       <div class="row">
+           <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>steffistalin25@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9042094546</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/steffi-stalin-s-317721280"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SteffiStalin/desktop-tutorial"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/919042094546"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/_iffets_nilats?igsh=MWEzY2oxa2htbzZyOQ=="><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="images/Steffi Stalin S Resume.pdf" download class="btn btn2">Download CV</a>
+           </div>
+           <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+           </div>
+       </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i>. Made with <i class="fa-solid fa-heart"></i> by Steffi</p>
+    </div>
+ </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbypX3hmIUPDQCRndGlk6vxOz0L9IbwZwqW7z3pYY93bt9LMc1tXTR2lcfitjAApq6SbBA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+      .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>    
+
